@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/finall', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://sheetalsharmaba555:sharma@2024@cluster0.eah5s1y.mongodb.net/final-project?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Failed to connect to MongoDB', err));
 
